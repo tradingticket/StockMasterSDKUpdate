@@ -16,7 +16,6 @@
 		75D6D8131F1D5AD000E5A09C /* BEMCheckBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D6D80E1F1D5AD000E5A09C /* BEMCheckBox.framework */; };
 		75D6D8141F1D5AD000E5A09C /* JSONModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D6D80F1F1D5AD000E5A09C /* JSONModel.framework */; };
 		75D6D8151F1D5AD000E5A09C /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D6D8101F1D5AD000E5A09C /* MBProgressHUD.framework */; };
-		75D6D8161F1D5AD000E5A09C /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D6D8111F1D5AD000E5A09C /* PromiseKit.framework */; };
 		75D6D8171F1D5AD000E5A09C /* TradeItIosTicketSDK2Carthage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75D6D8121F1D5AD000E5A09C /* TradeItIosTicketSDK2Carthage.framework */; };
 		BF6E0B402A88E028926D2663 /* libPods-StockMasterSDKUpdate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F76B60D7904994A9B081AAC0 /* libPods-StockMasterSDKUpdate.a */; };
 /* End PBXBuildFile section */
@@ -51,7 +50,6 @@
 				75D6D8131F1D5AD000E5A09C /* BEMCheckBox.framework in Frameworks */,
 				75D6D8141F1D5AD000E5A09C /* JSONModel.framework in Frameworks */,
 				75D6D8151F1D5AD000E5A09C /* MBProgressHUD.framework in Frameworks */,
-				75D6D8161F1D5AD000E5A09C /* PromiseKit.framework in Frameworks */,
 				75D6D8171F1D5AD000E5A09C /* TradeItIosTicketSDK2Carthage.framework in Frameworks */,
 				BF6E0B402A88E028926D2663 /* libPods-StockMasterSDKUpdate.a in Frameworks */,
 			);
@@ -219,17 +217,17 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/TradeItIosTicketSDK2Carthage.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/JSONModel.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BEMCheckBox.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/MBProgressHUD.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/TradeItIosTicketSDK2Carthage.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PromiseKit.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/JSONModel.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/BEMCheckBox.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MBProgressHUD.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -241,13 +239,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockMasterSDKUpdate-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FCDA300A910D6FA8F031055D /* [CP] Copy Pods Resources */ = {
@@ -256,9 +257,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StockMasterSDKUpdate/Pods-StockMasterSDKUpdate-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GINInviteResources.bundle",
+				"${PODS_ROOT}/FirebaseInvites/Resources/GPPACLPickerResources.bundle",
+				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/JSQMessagesAssets.bundle",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesViewController.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesToolbarContentView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.xib",
+				"$PODS_CONFIGURATION_BUILD_DIR/MWPhotoBrowser/MWPhotoBrowser.bundle",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

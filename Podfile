@@ -1,7 +1,7 @@
 target 'StockMasterSDKUpdate' do
 	pod 'FMDB'
 	pod 'SAMKeychain'
-	pod 'SDWebImage'
+	pod 'SDWebImage', '~> 3.8'
 	pod 'TTTAttributedLabel'
     pod 'Mosquitto'
 	pod 'XlsxReaderWriter'

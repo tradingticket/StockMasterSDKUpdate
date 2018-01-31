@@ -1,69 +1,72 @@
 PODS:
-  - AWSAPIGateway (2.5.9):
-    - AWSCore (= 2.5.9)
-  - AWSCore (2.5.9)
-  - AWSMobileAnalytics (2.5.9):
-    - AWSCore (= 2.5.9)
-  - AWSS3 (2.5.9):
-    - AWSCore (= 2.5.9)
-  - AWSSNS (2.5.9):
-    - AWSCore (= 2.5.9)
-  - Bolts (1.8.4):
-    - Bolts/AppLinks (= 1.8.4)
-    - Bolts/Tasks (= 1.8.4)
-  - Bolts/AppLinks (1.8.4):
+  - AWSAPIGateway (2.6.11):
+    - AWSCore (= 2.6.11)
+  - AWSCore (2.6.11)
+  - AWSMobileAnalytics (2.6.11):
+    - AWSCore (= 2.6.11)
+  - AWSS3 (2.6.11):
+    - AWSCore (= 2.6.11)
+  - AWSSNS (2.6.11):
+    - AWSCore (= 2.6.11)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
-  - Bolts/Tasks (1.8.4)
-  - Crashlytics (3.8.5):
-    - Fabric (~> 1.6.3)
+  - Bolts/Tasks (1.9.0)
+  - Crashlytics (3.9.3):
+    - Fabric (~> 1.7.2)
   - DACircularProgress (2.3.1)
-  - Fabric (1.6.12)
-  - FBSDKCoreKit (4.24.0):
+  - Fabric (1.7.2)
+  - FBSDKCoreKit (4.30.0):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.24.0):
+  - FBSDKLoginKit (4.30.0):
     - FBSDKCoreKit
-  - FBSDKShareKit (4.24.0):
-    - FBSDKCoreKit
-  - Firebase (4.0.4):
-    - Firebase/Core (= 4.0.4)
-  - Firebase/AdMob (4.0.4):
+  - FBSDKShareKit (4.30.0):
+    - FBSDKCoreKit (~> 4.30.0)
+  - Firebase (4.8.2):
+    - Firebase/Core (= 4.8.2)
+  - Firebase/AdMob (4.8.2):
     - Firebase/Core
-    - Google-Mobile-Ads-SDK (= 7.21.0)
-  - Firebase/Auth (4.0.4):
+    - Google-Mobile-Ads-SDK (= 7.27.0)
+  - Firebase/Auth (4.8.2):
     - Firebase/Core
-    - FirebaseAuth (= 4.0.0)
-  - Firebase/Core (4.0.4):
-    - FirebaseAnalytics (= 4.0.2)
-    - FirebaseCore (= 4.0.4)
-  - Firebase/Invites (4.0.4):
+    - FirebaseAuth (= 4.4.2)
+  - Firebase/Core (4.8.2):
+    - FirebaseAnalytics (= 4.0.9)
+    - FirebaseCore (= 4.0.14)
+  - Firebase/Invites (4.8.2):
     - Firebase/Core
-    - FirebaseInvites (= 2.0.0)
-  - Firebase/Messaging (4.0.4):
+    - FirebaseInvites (= 2.0.2)
+  - Firebase/Messaging (4.8.2):
     - Firebase/Core
-    - FirebaseMessaging (= 2.0.0)
-  - Firebase/RemoteConfig (4.0.4):
+    - FirebaseMessaging (= 2.0.8)
+  - Firebase/RemoteConfig (4.8.2):
     - Firebase/Core
-    - FirebaseRemoteConfig (= 2.0.1)
-  - FirebaseAnalytics (4.0.2):
+    - FirebaseRemoteConfig (= 2.1.1)
+  - FirebaseABTesting (1.0.0):
+    - FirebaseCore (~> 4.0)
+    - Protobuf (~> 3.1)
+  - FirebaseAnalytics (4.0.9):
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseAuth (4.0.0):
+    - nanopb (~> 0.3)
+  - FirebaseAuth (4.4.2):
     - FirebaseAnalytics (~> 4.0)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseCore (4.0.4):
+  - FirebaseCore (4.0.14):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-    - nanopb (~> 0.3)
-  - FirebaseDynamicLinks (2.0.0):
+  - FirebaseDynamicLinks (2.3.2):
     - FirebaseAnalytics (~> 4.0)
-  - FirebaseInstanceID (2.0.0):
+  - FirebaseInstanceID (2.0.8):
     - FirebaseCore (~> 4.0)
-  - FirebaseInvites (2.0.0):
+  - FirebaseInvites (2.0.2):
     - FirebaseAnalytics (~> 4.0)
-    - FirebaseDynamicLinks (~> 2.0)
+    - FirebaseDynamicLinks (~> 2.2)
     - GoogleAPIClientForREST (~> 1.0)
-    - GoogleSignIn (~> 4.0)
+    - GoogleSignIn (~> 4.1)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
@@ -73,59 +76,61 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
     - GTMSessionFetcher/Full (~> 1.1)
     - Protobuf (~> 3.1)
-  - FirebaseMessaging (2.0.0):
+  - FirebaseMessaging (2.0.8):
     - FirebaseAnalytics (~> 4.0)
     - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - Protobuf (~> 3.1)
-  - FirebaseRemoteConfig (2.0.1):
+  - FirebaseRemoteConfig (2.1.1):
+    - FirebaseABTesting (~> 1.0)
     - FirebaseAnalytics (~> 4.0)
+    - FirebaseCore (~> 4.0)
     - FirebaseInstanceID (~> 2.0)
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
     - Protobuf (~> 3.1)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
-  - Google-Mobile-Ads-SDK (7.21.0)
-  - GoogleAPIClientForREST (1.3.0):
-    - GoogleAPIClientForREST/Core (= 1.3.0)
+  - Google-Mobile-Ads-SDK (7.27.0)
+  - GoogleAPIClientForREST (1.3.2):
+    - GoogleAPIClientForREST/Core (= 1.3.2)
     - GTMSessionFetcher (>= 1.1.7)
-  - GoogleAPIClientForREST/Core (1.3.0):
+  - GoogleAPIClientForREST/Core (1.3.2):
     - GTMSessionFetcher (>= 1.1.7)
-  - GoogleSignIn (4.0.2):
+  - GoogleSignIn (4.1.1):
     - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
     - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
     - GTMOAuth2 (~> 1.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleToolboxForMac/Core (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
-  - GoogleToolboxForMac/DebugUtils (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
-  - GoogleToolboxForMac/Defines (2.1.1)
-  - GoogleToolboxForMac/Logger (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
-  - GoogleToolboxForMac/NSData+zlib (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
-  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.1):
-    - GoogleToolboxForMac/DebugUtils (= 2.1.1)
-    - GoogleToolboxForMac/Defines (= 2.1.1)
-    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
-  - GoogleToolboxForMac/NSString+URLArguments (2.1.1)
-  - GoogleToolboxForMac/StringEncoding (2.1.1):
-    - GoogleToolboxForMac/Defines (= 2.1.1)
-  - GoogleToolboxForMac/URLBuilder (2.1.1):
-    - GoogleToolboxForMac/Core (= 2.1.1)
-    - GoogleToolboxForMac/Defines (= 2.1.1)
-    - GoogleToolboxForMac/NSDictionary+URLArguments (= 2.1.1)
-    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.1)
-  - GTMOAuth2 (1.1.4):
+  - GoogleToolboxForMac/Core (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/DebugUtils (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/Logger (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/NSData+zlib (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.3)
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
+  - GoogleToolboxForMac/StringEncoding (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+  - GoogleToolboxForMac/URLBuilder (2.1.3):
+    - GoogleToolboxForMac/Core (= 2.1.3)
+    - GoogleToolboxForMac/Defines (= 2.1.3)
+    - GoogleToolboxForMac/NSDictionary+URLArguments (= 2.1.3)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
+  - GTMOAuth2 (1.1.6):
     - GTMSessionFetcher (~> 1.1)
-  - GTMSessionFetcher (1.1.11):
-    - GTMSessionFetcher/Full (= 1.1.11)
-  - GTMSessionFetcher/Core (1.1.11)
-  - GTMSessionFetcher/Full (1.1.11):
-    - GTMSessionFetcher/Core (= 1.1.11)
+  - GTMSessionFetcher (1.1.13):
+    - GTMSessionFetcher/Full (= 1.1.13)
+  - GTMSessionFetcher/Core (1.1.13)
+  - GTMSessionFetcher/Full (1.1.13):
+    - GTMSessionFetcher/Core (= 1.1.13)
   - hpple (0.2.0)
   - JSQMessagesViewController (7.3.5):
     - JSQSystemSoundPlayer (~> 2.0.1)
@@ -147,8 +152,8 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - OpenSSL-Universal (1.0.1.20)
-  - Protobuf (3.3.0)
-  - SAMKeychain (1.5.2)
+  - Protobuf (3.5.0)
+  - SAMKeychain (1.5.3)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
@@ -186,51 +191,52 @@ DEPENDENCIES:
   - Mosquitto
   - MWPhotoBrowser
   - SAMKeychain
-  - SDWebImage
+  - SDWebImage (~> 3.8)
   - TTTAttributedLabel
   - TwitterCore (~> 2.8)
   - TwitterKit (~> 2.8)
   - XlsxReaderWriter
 
 SPEC CHECKSUMS:
-  AWSAPIGateway: ed99502fc277a949939e67838abf04679b5f9945
-  AWSCore: c71840dd51f271dc0af8de8fd6f352767ebde8b4
-  AWSMobileAnalytics: cd23e8c06cc58c42e3326512ce682abbff3345c2
-  AWSS3: c36b91edb50ccd676be4a92836bb72f0c2ac312b
-  AWSSNS: 158640bc69947f179eff6ac96a9ab9d4893675c1
-  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  Crashlytics: dfbae35ef22ca189240d230ad501feea4ee85d2d
+  AWSAPIGateway: eb83d126ae5f9e02eb37f03ce1f6508afd86c41b
+  AWSCore: a461695bf302a32a366768bf36056be3a2c87d8d
+  AWSMobileAnalytics: 1746be1ddbd2326ad3775a4457294c3ef2bfa180
+  AWSS3: d13e29a4dbfecb7cd99b4ce833a9fe221dee8cba
+  AWSSNS: 41e648984fd05f83ef50753614e9f74547abe6ca
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
-  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
-  FBSDKCoreKit: f8c9eb0dd34a9cd277c7b60da4b32226d142502d
-  FBSDKLoginKit: 1214c6d5a1c4995b694d8db8a9ba6910c6028acf
-  FBSDKShareKit: a2ed9d7781a4eda9ac20d7404305e795b10251ac
-  Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
-  FirebaseAnalytics: ad41720e3e67fc63fbe3d2948d3e26932a8de311
-  FirebaseAuth: ebb6abcbabae00fc47446d690c19ce68d8484fde
-  FirebaseCore: cfc042628ef9f20debe09c0eb683135fcd404cb4
-  FirebaseDynamicLinks: ad3bef2e8addfa1490af9db02201429c5c9447dd
-  FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
-  FirebaseInvites: 1940225e620b0423cf04fb4e4c7eb2a1b0b7595b
-  FirebaseMessaging: 227406c05b0dc9290702d2e9f18ab5528f0c2cf2
-  FirebaseRemoteConfig: 328244399f64226cfdfa32efee596bb010ef5665
+  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  FBSDKCoreKit: 7c4bba2877781a131ab5d54c0a78c405d4307b62
+  FBSDKLoginKit: fe7a7e82373dc5daad92e1623219e86224ab1fb1
+  FBSDKShareKit: a9427574b51bde4f437262c3f118c4ccfddeef6c
+  Firebase: 7d3b8cd837ad9fcd391657734c0d56dab8e9a5a3
+  FirebaseABTesting: d07d0ee833b842d5153549e4c7e2e2cb1c23a3f9
+  FirebaseAnalytics: 388b630c15713f5dbf364071f5f3d6077fb52f4e
+  FirebaseAuth: bd2738c5c1e92b108ba5f7f7335908097a4e50bb
+  FirebaseCore: 2e0b98fb2d64ca8140136beff15772bdd14d2dd7
+  FirebaseDynamicLinks: 38b68641d24e78d0277a9205d988ce22875d5a25
+  FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
+  FirebaseInvites: ae15e0636f9eb42bdf5c1ef4c8f7bd4a88f9878b
+  FirebaseMessaging: dfdcd307c2382290a1e297a81d0f18370f5b1bcd
+  FirebaseRemoteConfig: 3310f264fff78b6c2e78b24dcfc4c1b3d6766209
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
-  Google-Mobile-Ads-SDK: 4a6f1b43c8cc0e1e95a3b59d9f52a01671c6f9f3
-  GoogleAPIClientForREST: bf724227a6ad1459aab09b73800aad9184a0f64c
-  GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
-  GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
-  GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
-  GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
+  Google-Mobile-Ads-SDK: 83f7f890e638ce8f1debd440ea363338c9f6be3b
+  GoogleAPIClientForREST: 4fa84fc61fdeea48dd7088de5c1a864ace18125b
+  GoogleSignIn: 3fdaa34a2ba04dbd7a25d7db39aecb0da98d5bdc
+  GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 5bb1eae636127de695590f50e7d248483eb891e6
   hpple: 3b765f96fc2cd56ad1a49aef6f7be5cb2aa64b57
   JSQMessagesViewController: 6587f56aedbcb150a8ba1d968e1ef58b1bc758b7
   JSQSystemSoundPlayer: c5850e77a4363ffd374cd851154b9af93264ed8d
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   Mosquitto: d5070269b43acc98e4a8272b9e08b73d5de86a5c
   MWPhotoBrowser: 5836d7aa041dc05a13de380c246826578adc5ea5
-  nanopb: 22bc080fa3955e2116b6ff3ee6c2cb3c15ab97cb
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   OpenSSL-Universal: 71f2c4b2ae758e2218090f905e95ca0ac5c01be7
-  Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
-  SAMKeychain: 1865333198217411f35327e8da61b43de79b635b
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SSZipArchive: d3d66fc0e3fb6ac0f723d95481aae71aae916cc3
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
@@ -239,6 +245,6 @@ SPEC CHECKSUMS:
   XlsxReaderWriter: 7e4c5c9fb7c4e78e4edc89fa11f50c086540277c
   XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
 
-PODFILE CHECKSUM: 52cc86ce6fb1c3cded40be26604b33362b0d0fbd
+PODFILE CHECKSUM: 1a1b2a87470b1320d8d1c606feabaa1d3004fe54
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.1
